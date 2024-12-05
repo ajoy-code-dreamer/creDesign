@@ -21,7 +21,7 @@
   --primary-clr: #ff6b00;
   --primary-text-clr: #101010;
   --secondary-bg-clr: #191919;
-  --secondary-text-clr: #dddddd;
+  --secondary-text-clr: #606060;
   --transparent-clr: transparent;
   /* === colors === */
   /* === method === */
@@ -92,6 +92,69 @@ img {
   color: var(--primary-clr);
   background-color: var(--transparent-clr);
 }
+.common_section_sub_heading {
+  font-family: var(--jost-font);
+  color: var(--primary-text-clr);
+  font-size: 16px;
+  font-weight: var(--regular-weight);
+  line-height: 27.2px;
+  margin-left: 28px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.common_section_sub_heading span {
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid var(--primary-text-clr);
+  left: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.common_section_sub_heading span::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid var(--primary-text-clr);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.common_section_heading {
+  font-family: var(--jost-font);
+  color: var(--primary-text-clr);
+  font-size: 70px;
+  font-weight: var(--bold-weight);
+  line-height: 95px;
+}
+.common_section_details {
+  font-family: var(--jost-font);
+  color: var(--secondary-text-clr);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 30.6px;
+}
+
 /* ============= common css end here ================ */
 
 /* ===================== navbar css start here ============== */
@@ -124,10 +187,45 @@ nav {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.nav_link:hover{
+.nav_link:hover {
   color: var(--primary-clr);
 }
 /* ===================== navbar css end here ============== */
+
+/* ===================== banner section css start here ============== */
+#banner {
+  background: linear-gradient(
+    256deg,
+    rgba(255, 195, 152, 0.2) 26.56%,
+    rgba(255, 234, 190, 0.3) 100%
+  );
+}
+.banner_section_wrapper{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  align-items: center;
+}
+#banner .common_section_details{
+  max-width: 649px;
+  padding: 46px 0 50px;
+}
+/* ===================== banner section css end here ============== */
+
+/* ===================== section css start here ============== */
+
+/* ===================== section css end here ============== */
+
+/* ===================== section css start here ============== */
+
+/* ===================== section css end here ============== */
+
+/* ===================== section css start here ============== */
+
+/* ===================== section css end here ============== */
+
+/* ===================== section css start here ============== */
+
+/* ===================== section css end here ============== */
 
 /* ===================== section css start here ============== */
 
