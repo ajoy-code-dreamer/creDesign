@@ -98,7 +98,7 @@ img {
   font-size: 16px;
   font-weight: var(--regular-weight);
   line-height: 27.2px;
-  margin-left: 28px;
+  padding-left: 28px;
   position: relative;
   margin-bottom: 10px;
 }
@@ -113,7 +113,7 @@ img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border: 2px solid var(--primary-text-clr);
-  left: -28px;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -244,26 +244,26 @@ nav {
   font-family: var(--jost-font);
   font-size: 21px;
   font-weight: var(--bold-weight);
-  line-height: 150%; 
+  line-height: 150%;
 }
-.about_item h5{
+.about_item h5 {
   color: var(--primary-text-clr);
-font-family: var(--jost-font);
-font-size: 21px;
-font-weight: var(--medium-weight);
-line-height: 20px; 
+  font-family: var(--jost-font);
+  font-size: 21px;
+  font-weight: var(--medium-weight);
+  line-height: 20px;
 }
-.about_list_wrapper li{
+.about_list_wrapper li {
   color: #000;
-font-family: var(--jost-font);
-font-size: 16px;
-font-weight: var(--regular-weight);
-line-height: 150%;
-margin-bottom: 20px;
-padding-left: 30px;
-position: relative;
+  font-family: var(--jost-font);
+  font-size: 16px;
+  font-weight: var(--regular-weight);
+  line-height: 150%;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  position: relative;
 }
-.about_list_wrapper li i{
+.about_list_wrapper li i {
   font-size: 14px;
   color: var(--primary-clr);
   position: absolute;
@@ -275,14 +275,73 @@ position: relative;
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
 }
-#about .common_btn{
+#about .common_btn {
   margin-top: 30px;
 }
 /* ===================== about section css end here ============== */
 
-/* ===================== section css start here ============== */
-
-/* ===================== section css end here ============== */
+/* ===================== service section css start here ============== */
+#service {
+  padding-bottom: 130px;
+}
+#service .common_section_heading,
+#service .common_section_sub_heading {
+  text-align: center;
+}
+#service .common_section_sub_heading span {
+  left: 46%;
+}
+#service .common_section_heading {
+  padding-bottom: 50px;
+}
+.service_item_wrapper {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(4, auto);
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px 24px;
+}
+.service_item {
+  max-width: 312px;
+  padding: 46px 30px 50px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ffe2d1;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.service_item:hover {
+  background-color: #fff5ef;
+}
+.service_item_icon {
+  font-size: 48px;
+  font-weight: var(--light-weight);
+  color: var(--primary-clr);
+}
+.service_item_name {
+  font-family: var(--jost-font);
+  color: var(--primary-text-clr);
+  font-size: 24px;
+  font-weight: var(--medium-weight);
+  line-height: 31.2px;
+  padding: 25px 0 13px;
+}
+.service_item_details {
+  font-family: var(--jost-font);
+  color: var(--secondary-text-clr);
+  font-size: 16px;
+  font-weight: var(--regular-weight);
+  line-height: 27.2px;
+}
+/* ===================== service section css end here ============== */
 
 /* ===================== section css start here ============== */
 
